@@ -8,7 +8,7 @@
    stages {
      stage('Build') {
        steps {
-         bat 'cd goodbye-app & mvn package deploy -DmuleDeploy'
+         bat 'mvn package deploy -DmuleDeploy'
        }
      }
    }
